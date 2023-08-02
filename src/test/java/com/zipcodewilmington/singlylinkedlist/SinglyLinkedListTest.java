@@ -49,7 +49,7 @@ public class SinglyLinkedListTest {
     public void testToString2() {
         SinglyLinkedList<Integer> llist = new SinglyLinkedList<Integer>();
         llist.add(1);
-        String expected = "head -> [x] -> NULL";
+        String expected = "head -> [1] -> NULL";
 
         Assert.assertEquals(expected, llist.toString());
 
@@ -59,7 +59,7 @@ public class SinglyLinkedListTest {
 
         llist.add(1);
         llist.add(2);
-        String expected = "head -> [x] -> [y] -> NULL";
+        String expected = "head -> [1] -> [2] -> NULL";
 
 
         Assert.assertEquals(expected, llist.toString());
