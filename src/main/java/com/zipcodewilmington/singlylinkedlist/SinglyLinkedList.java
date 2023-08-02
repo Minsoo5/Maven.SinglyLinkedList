@@ -62,4 +62,16 @@ public class SinglyLinkedList<T> implements  LinkedListIface{
     public void sort(Comparator comparator) {
 
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("head -> ");
+        //add the HEAD
+
+
+        //add the NULL
+        sb.append("NULL");
+        return sb.toString();
+    }
 }

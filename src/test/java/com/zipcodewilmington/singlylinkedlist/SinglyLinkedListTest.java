@@ -33,8 +33,38 @@ public class SinglyLinkedListTest {
         SinglyLinkedList<Integer> llist = new SinglyLinkedList<Integer>();
         llist.add(1);
         llist.add(2);
-        Assert.assertEquals( false, llist.isEmpty());
+        Assert.assertFalse(llist.isEmpty());
 
     }
+
+    @Test
+    public void testToString1() {
+        SinglyLinkedList<Integer> llist = new SinglyLinkedList<Integer>();
+        String expected = "head -> NULL";
+        String actual = llist.toString();
+        Assert.assertEquals(expected, actual);
+
+    }
+    @Test
+    public void testToString2() {
+        SinglyLinkedList<Integer> llist = new SinglyLinkedList<Integer>();
+        llist.add(1);
+        String expected = "head -> [x] -> NULL";
+
+        Assert.assertEquals(expected, llist.toString());
+
+    }@Test
+    public void testToString3() {
+        SinglyLinkedList<Integer> llist = new SinglyLinkedList<Integer>();
+
+        llist.add(1);
+        llist.add(2);
+        String expected = "head -> [x] -> [y] -> NULL";
+
+
+        Assert.assertEquals(expected, llist.toString());
+
+    }
+
 
 }
