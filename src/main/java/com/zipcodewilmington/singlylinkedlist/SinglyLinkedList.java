@@ -7,6 +7,7 @@ import java.util.Comparator;
  */
 public class SinglyLinkedList<T> implements  LinkedListIface{
 
+    public SinglyLinkedList () {}
 
     @Override
     public void add(Object data) {
