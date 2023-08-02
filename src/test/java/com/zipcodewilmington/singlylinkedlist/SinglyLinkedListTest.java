@@ -15,10 +15,10 @@ public class SinglyLinkedListTest {
 
     }
 
-//    @Test
-//    public void testIsEmpty() {
-//        SinglyLinkedList<Integer> llist = new SinglyLnkedList<Integer>();
-//        Assert.assertEquals((Boolean) true, llist.isEmpty());
-//    }
+    @Test
+    public void testIsEmpty() {
+        SinglyLinkedList<Integer> llist = new SinglyLinkedList<Integer>();
+        Assert.assertEquals((Boolean) true, llist.isEmpty());
+    }
 
 }

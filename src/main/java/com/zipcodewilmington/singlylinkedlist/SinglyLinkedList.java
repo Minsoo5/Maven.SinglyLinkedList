@@ -7,7 +7,12 @@ import java.util.Comparator;
  */
 public class SinglyLinkedList<T> implements  LinkedListIface{
 
+    private Node<T> head = null;
+
     public SinglyLinkedList () {}
+    public Boolean isEmpty() {
+        return (head == null);
+    }
 
     @Override
     public void add(Object data) {
