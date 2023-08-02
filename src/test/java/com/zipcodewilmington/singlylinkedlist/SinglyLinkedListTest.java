@@ -188,6 +188,14 @@ public class SinglyLinkedListTest {
         Assert.assertEquals(null, llist.get(1));
 
     }
+    @Test (expected = IndexOutOfBoundsException.class)
+    public void testGet4() {
+        SinglyLinkedList<Integer> llist = new SinglyLinkedList<>();
+        llist.add(5);
+        llist.add(7);
+        llist.get(199);
+    }
+
 
 
 }
