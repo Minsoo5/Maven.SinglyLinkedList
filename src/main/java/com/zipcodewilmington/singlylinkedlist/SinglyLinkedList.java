@@ -35,6 +35,18 @@ public class SinglyLinkedList<T> implements  LinkedListIface{
 
     @Override
     public Object get(int index) throws IndexOutOfBoundsException {
+        //if (index >= this.size()) throw IndexOutOfBoundsException;
+        if (index > -1 && index < this.size()) {
+            int counter = 0;
+            Node<T> temp = head;
+            while (temp.hasNext()) {
+                if (counter == index)
+                    return temp.getData();
+                counter++;
+                temp = temp.getNext();
+            }
+
+        }
         return null;
     }
 
