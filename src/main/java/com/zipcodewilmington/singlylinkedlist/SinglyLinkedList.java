@@ -16,7 +16,16 @@ public class SinglyLinkedList<T> implements  LinkedListIface{
 
     @Override
     public void add(Object data) {
-
+        Node newNode = new Node(data);
+        if (this.head == null) {
+            this.head = newNode;
+        } else {
+            Node<T> temp = head;
+            while (temp.hasNext()) {
+                temp = temp.getNext();
+            }
+            temp.setNext(newNode);
+        }
     }
 
     @Override
